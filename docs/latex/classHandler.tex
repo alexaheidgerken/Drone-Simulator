@@ -1,0 +1,78 @@
+\hypertarget{classHandler}{}\doxysection{Handler Class Reference}
+\label{classHandler}\index{Handler@{Handler}}
+
+
+this class is the base class for the handler classes  
+
+
+
+
+{\ttfamily \#include $<$Handler.\+h$>$}
+
+
+
+Inheritance diagram for Handler\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classHandler}{Handler}} $\ast$ \mbox{\hyperlink{classHandler_ac8096507d0ed27bbca4e9e8bd0d7b11e}{Set\+Next}} (\mbox{\hyperlink{classHandler}{Handler}} $\ast$handler)=0
+\begin{DoxyCompactList}\small\item\em Set the Next handler object in chain. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHandler_ad9f559a969a2c6d04fd3b47c86a3b568}{Handle}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler, double dt)=0
+\begin{DoxyCompactList}\small\item\em Handle the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class is the base class for the handler classes 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHandler_ad9f559a969a2c6d04fd3b47c86a3b568}\label{classHandler_ad9f559a969a2c6d04fd3b47c86a3b568}} 
+\index{Handler@{Handler}!Handle@{Handle}}
+\index{Handle@{Handle}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily virtual void Handler\+::\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Handle the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to handle \\
+\hline
+{\em scheduler} & The scheduler containing other entities \\
+\hline
+{\em dt} & The time step \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAbstractHandler_ae2a248866226f713c0614aefe919da77}{Abstract\+Handler}}, \mbox{\hyperlink{classExtravagantHandler_aea9d563acb1dfec750a5bf07e377ca8f}{Extravagant\+Handler}}, \mbox{\hyperlink{classFancyHandler_a6436c4024ba3bf8b888fb5572b0646f6}{Fancy\+Handler}}, and \mbox{\hyperlink{classStandardHandler_af418e95d3c945ee79d561e24c3069010}{Standard\+Handler}}.
+
+\mbox{\Hypertarget{classHandler_ac8096507d0ed27bbca4e9e8bd0d7b11e}\label{classHandler_ac8096507d0ed27bbca4e9e8bd0d7b11e}} 
+\index{Handler@{Handler}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classHandler}{Handler}}$\ast$ Handler\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandler}{Handler}} $\ast$}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Next handler object in chain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Handler$\ast$ for chaining calls 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAbstractHandler_ad04c1c4354cc86e9d37e827e9c0a459a}{Abstract\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/include/Handler.\+h\end{DoxyCompactItemize}

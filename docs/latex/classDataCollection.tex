@@ -1,0 +1,125 @@
+\hypertarget{classDataCollection}{}\doxysection{Data\+Collection Class Reference}
+\label{classDataCollection}\index{DataCollection@{DataCollection}}
+
+
+\mbox{\hyperlink{classDataCollection}{Data\+Collection}} class using Singleton Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Collection.\+h$>$}
+
+
+
+Collaboration diagram for Data\+Collection\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataCollection_a8f1b5a9da73aefc4964bee31c9478d46}\label{classDataCollection_a8f1b5a9da73aefc4964bee31c9478d46}} 
+\mbox{\hyperlink{classDataCollection_a8f1b5a9da73aefc4964bee31c9478d46}{Data\+Collection}} (\mbox{\hyperlink{classDataCollection}{Data\+Collection}} const \&)=delete
+\begin{DoxyCompactList}\small\item\em Make sure the class is not cloneable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollection_a851f0d70b3d8c0705b7fc6642dcc47ed}\label{classDataCollection_a851f0d70b3d8c0705b7fc6642dcc47ed}} 
+void \mbox{\hyperlink{classDataCollection_a851f0d70b3d8c0705b7fc6642dcc47ed}{operator=}} (\mbox{\hyperlink{classDataCollection}{Data\+Collection}} const \&)=delete
+\begin{DoxyCompactList}\small\item\em Make sure that the class is not assignable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollection_ab51334bac2a9cadc5d0c02142fa752a9}\label{classDataCollection_ab51334bac2a9cadc5d0c02142fa752a9}} 
+\mbox{\hyperlink{classDataCollection_ab51334bac2a9cadc5d0c02142fa752a9}{$\sim$\+Data\+Collection}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollection_abef0ff7551801f0a8faedc55b3a8a77d}{Update\+Position}} (const \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Update the position of the entity in the data collection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollection_adee0d0edd7e259810ba02b0556831ca2}{To\+C\+SV}} ()
+\begin{DoxyCompactList}\small\item\em Write the data to a C\+SV file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollection_a3abc1654014eb0d5a32bba3bf5fe502e}{Entity\+Creation}} (const Json\+Object \&details)
+\begin{DoxyCompactList}\small\item\em Write/\+Update a key-\/value pair to the data collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDataCollection}{Data\+Collection}} $\ast$ \mbox{\hyperlink{classDataCollection_a2d70e7d8f3d7551d74ca2887b94ada03}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classDataCollection}{Data\+Collection}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataCollection_ab44a309dc431d80bed7c7719e9221761}\label{classDataCollection_ab44a309dc431d80bed7c7719e9221761}} 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, std\+::string $>$ $>$ {\bfseries entity\+Data}
+\item 
+\mbox{\Hypertarget{classDataCollection_a64274f4fefbbf2170d435caefcdabb42}\label{classDataCollection_a64274f4fefbbf2170d435caefcdabb42}} 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, \mbox{\hyperlink{classVector3}{Vector3}} $>$ $>$ {\bfseries entity\+Coordinates}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataCollection_a764f04b62192cbc207f63c4fbf9fbf32}\label{classDataCollection_a764f04b62192cbc207f63c4fbf9fbf32}} 
+static \mbox{\hyperlink{classDataCollection}{Data\+Collection}} $\ast$ {\bfseries instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDataCollection}{Data\+Collection}} class using Singleton Pattern. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataCollection_a3abc1654014eb0d5a32bba3bf5fe502e}\label{classDataCollection_a3abc1654014eb0d5a32bba3bf5fe502e}} 
+\index{DataCollection@{DataCollection}!EntityCreation@{EntityCreation}}
+\index{EntityCreation@{EntityCreation}!DataCollection@{DataCollection}}
+\doxysubsubsection{\texorpdfstring{EntityCreation()}{EntityCreation()}}
+{\footnotesize\ttfamily void Data\+Collection\+::\+Entity\+Creation (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{details }\end{DoxyParamCaption})}
+
+
+
+Write/\+Update a key-\/value pair to the data collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em details} & The Json\+Object containing the key-\/value pairs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollection_a2d70e7d8f3d7551d74ca2887b94ada03}\label{classDataCollection_a2d70e7d8f3d7551d74ca2887b94ada03}} 
+\index{DataCollection@{DataCollection}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!DataCollection@{DataCollection}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataCollection}{Data\+Collection}} $\ast$ Data\+Collection\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the \mbox{\hyperlink{classDataCollection}{Data\+Collection}} instance. 
+
+\begin{DoxyReturn}{Returns}
+Data\+Collection$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollection_adee0d0edd7e259810ba02b0556831ca2}\label{classDataCollection_adee0d0edd7e259810ba02b0556831ca2}} 
+\index{DataCollection@{DataCollection}!ToCSV@{ToCSV}}
+\index{ToCSV@{ToCSV}!DataCollection@{DataCollection}}
+\doxysubsubsection{\texorpdfstring{ToCSV()}{ToCSV()}}
+{\footnotesize\ttfamily void Data\+Collection\+::\+To\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Write the data to a C\+SV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & current time step for the simulation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollection_abef0ff7551801f0a8faedc55b3a8a77d}\label{classDataCollection_abef0ff7551801f0a8faedc55b3a8a77d}} 
+\index{DataCollection@{DataCollection}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!DataCollection@{DataCollection}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily void Data\+Collection\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Update the position of the entity in the data collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to update \\
+\hline
+{\em dt} & The time step for the simulation \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/include/Data\+Collection.\+h\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/src/Data\+Collection.\+cc\end{DoxyCompactItemize}

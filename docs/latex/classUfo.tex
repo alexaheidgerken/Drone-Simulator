@@ -1,0 +1,179 @@
+\hypertarget{classUfo}{}\doxysection{Ufo Class Reference}
+\label{classUfo}\index{Ufo@{Ufo}}
+
+
+Represents a U\+FO in the drone simulation.  
+
+
+
+
+{\ttfamily \#include $<$Ufo.\+h$>$}
+
+
+
+Inheritance diagram for Ufo\+:
+% FIG 0
+
+
+Collaboration diagram for Ufo\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUfo_ab878cdaea459f8795000b520482d0a0d}{Ufo}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em U\+F\+Os are created with a J\+S\+ON object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUfo_a712ed34bcd935468eb5ba2921a330de2}\label{classUfo_a712ed34bcd935468eb5ba2921a330de2}} 
+\mbox{\hyperlink{classUfo_a712ed34bcd935468eb5ba2921a330de2}{$\sim$\+Ufo}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUfo_a17ad8935dfed5cc415f8a49ee60c4fda}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler) override
+\begin{DoxyCompactList}\small\item\em Updates the U\+FO\textquotesingle{}s position based on its speed and direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUfo_ad35e5b3f19022fa48f8c35fa41f5c3c0}\label{classUfo_ad35e5b3f19022fa48f8c35fa41f5c3c0}} 
+void \mbox{\hyperlink{classUfo_ad35e5b3f19022fa48f8c35fa41f5c3c0}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets a new random destination for the U\+FO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classUfo_a589386648fdfef6e8d7bf1613368f070}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the U\+FO\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classUfo_aced4df7cbfa591dc4c512edc3863fa3d}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Gets the U\+FO\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classUfo_ab3b09dea4ef958b509678d8872a83b9a}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Gets the U\+FO\textquotesingle{}s destination. \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classUfo_a3a4004e130f68091db080025e4cdfde9}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em Gets the U\+FO\textquotesingle{}s details. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classUfo_a10b3ea01bb2a29f366acd46f687c5cca}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the U\+FO\textquotesingle{}s speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a U\+FO in the drone simulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUfo_ab878cdaea459f8795000b520482d0a0d}\label{classUfo_ab878cdaea459f8795000b520482d0a0d}} 
+\index{Ufo@{Ufo}!Ufo@{Ufo}}
+\index{Ufo@{Ufo}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{Ufo()}{Ufo()}}
+{\footnotesize\ttfamily Ufo\+::\+Ufo (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+U\+F\+Os are created with a J\+S\+ON object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & J\+S\+ON object containing the U\+FO\textquotesingle{}s information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUfo_ab3b09dea4ef958b509678d8872a83b9a}\label{classUfo_ab3b09dea4ef958b509678d8872a83b9a}} 
+\index{Ufo@{Ufo}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Ufo\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the U\+FO\textquotesingle{}s destination. 
+
+\begin{DoxyReturn}{Returns}
+The U\+FO\textquotesingle{}s destination 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classUfo_a3a4004e130f68091db080025e4cdfde9}\label{classUfo_a3a4004e130f68091db080025e4cdfde9}} 
+\index{Ufo@{Ufo}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Ufo\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the U\+FO\textquotesingle{}s details. 
+
+\begin{DoxyReturn}{Returns}
+The U\+FO\textquotesingle{}s details 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classUfo_aced4df7cbfa591dc4c512edc3863fa3d}\label{classUfo_aced4df7cbfa591dc4c512edc3863fa3d}} 
+\index{Ufo@{Ufo}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Ufo\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the U\+FO\textquotesingle{}s direction. 
+
+\begin{DoxyReturn}{Returns}
+The U\+FO\textquotesingle{}s direction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classUfo_a589386648fdfef6e8d7bf1613368f070}\label{classUfo_a589386648fdfef6e8d7bf1613368f070}} 
+\index{Ufo@{Ufo}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Ufo\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the U\+FO\textquotesingle{}s position. 
+
+\begin{DoxyReturn}{Returns}
+The U\+FO\textquotesingle{}s position 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classUfo_a10b3ea01bb2a29f366acd46f687c5cca}\label{classUfo_a10b3ea01bb2a29f366acd46f687c5cca}} 
+\index{Ufo@{Ufo}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Ufo\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the U\+FO\textquotesingle{}s speed. 
+
+\begin{DoxyReturn}{Returns}
+The U\+FO\textquotesingle{}s speed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classUfo_a17ad8935dfed5cc415f8a49ee60c4fda}\label{classUfo_a17ad8935dfed5cc415f8a49ee60c4fda}} 
+\index{Ufo@{Ufo}!Update@{Update}}
+\index{Update@{Update}!Ufo@{Ufo}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ufo\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the U\+FO\textquotesingle{}s position based on its speed and direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The change in time \\
+\hline
+{\em scheduler} & The scheduler containing all the entities \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/include/Ufo.\+h\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/src/Ufo.\+cc\end{DoxyCompactItemize}

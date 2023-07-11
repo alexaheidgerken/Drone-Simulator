@@ -1,0 +1,25 @@
+digraph "IEntity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="IEntity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents an entity in a physical system."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Drone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDrone.html",tooltip="Represents a drone in a physical system. Drones move using euler integration based on a specified vel..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Helicopter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHelicopter.html",tooltip="Helicopter class."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Human",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHuman.html",tooltip="Human class."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Robot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRobot.html",tooltip="Represents a robot in a physical system."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="TypeDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTypeDecorator.html",tooltip="this class inherits from the IEntity class and is represents a type decorator where the entity will h..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="ExtravagantDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classExtravagantDecorator.html",tooltip="this class is the decorator for an extravagant entity"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="FancyDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFancyDecorator.html",tooltip="this class is the decorator for a fancy entity"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="StandardDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStandardDecorator.html",tooltip="this class is the decorator for a standard entity"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Ufo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUfo.html",tooltip="Represents a UFO in the drone simulation."];
+}

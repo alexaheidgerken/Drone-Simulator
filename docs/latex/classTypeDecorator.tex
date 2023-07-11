@@ -1,0 +1,533 @@
+\hypertarget{classTypeDecorator}{}\doxysection{Type\+Decorator Class Reference}
+\label{classTypeDecorator}\index{TypeDecorator@{TypeDecorator}}
+
+
+this class inherits from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and is represents a type decorator where the entity will have a travel type.  
+
+
+
+
+{\ttfamily \#include $<$Type\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Type\+Decorator\+:
+% FIG 0
+
+
+Collaboration diagram for Type\+Decorator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTypeDecorator_a674efa644693cb7ead18f51267d06c1a}{Type\+Decorator}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$\mbox{\hyperlink{classTypeDecorator_ab6a1e8cc4d4e4256ea363a9555deb062}{entity}})
+\begin{DoxyCompactList}\small\item\em Construct a new Type Decorator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTypeDecorator_a23a85298e52317632fa12dd13c606b20}\label{classTypeDecorator_a23a85298e52317632fa12dd13c606b20}} 
+\mbox{\hyperlink{classTypeDecorator_a23a85298e52317632fa12dd13c606b20}{$\sim$\+Type\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em Type Decorator Destructor. \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classTypeDecorator_a2be1200f7ce657869e0b3c71b69c0ac3}{Get\+Details}} () const override
+\begin{DoxyCompactList}\small\item\em Get the decorated Details object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a8bfe41da8ba891dcf8f844feb7ad557e}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Update the entity\textquotesingle{}s position and direction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTypeDecorator_aca5514f565caf3eeece86ad02c48e700}{Get\+Id}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Id of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTypeDecorator_a4cd360b71a99e1720a771705bdf2f976}{Get\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em Get the position of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTypeDecorator_af37120741645f6f9d95731b9290b3b2f}{Get\+Direction}} () const override
+\begin{DoxyCompactList}\small\item\em Get the direction of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTypeDecorator_a634a953279461cb6fc120857e8051e78}{Get\+Destination}} () const override
+\begin{DoxyCompactList}\small\item\em Get the destination of the entity. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTypeDecorator_a6b0de3c017c7c4ce9418bcfc756253c7}{Get\+Color}} () const override
+\begin{DoxyCompactList}\small\item\em Get the color of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTypeDecorator_affe680743bbd6cefec325d1ed008cc2b}{Get\+Speed}} () const override
+\begin{DoxyCompactList}\small\item\em Get the speed of the entity. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTypeDecorator_a6942c5328f2ecd558bb07a9998b45db5}{Get\+Strategy\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Strategy Name of the entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTypeDecorator_a8383763b8197d00086034603f424da7c}{Get\+Availability}} () const override
+\begin{DoxyCompactList}\small\item\em Get the availability of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a2b5f93b45d6b8c6461b2611fd9d82d17}{Set\+Strategy\+Name}} (std\+::string strategy\+Name\+\_\+) override
+\begin{DoxyCompactList}\small\item\em Set the strategy name of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a1c2b6e6fda23fe61a52dc080ba6ec2b8}{Set\+Availability}} (bool choice) override
+\begin{DoxyCompactList}\small\item\em Set the availability of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_aea370b6eccc0f1e224d8d1ace738a64f}{Set\+Graph}} (const I\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Set the graph of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_aa824eb44692ef82d4d27811b8b85a252}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_ad381da7e062729e4b92095dbc495769f}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Direction of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_af0ec955ecbaf44d877d2859ca901fffa}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Destination of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a83e633dc9a00b646ccef82cdf48214cf}{Set\+Color}} (std\+::string col\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the coloe of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_ad91f16fe5ac2d86f7d5569f9aeeca08c}{Set\+Picked\+Up}} (bool picked\+Up)
+\begin{DoxyCompactList}\small\item\em Set the picked up status of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a3aa4ecf2c0688063dcac9b5208d67ad3}{Set\+To\+Robot}} (std\+::string strategy\+Name, \mbox{\hyperlink{classVector3}{Vector3}} start, \mbox{\hyperlink{classVector3}{Vector3}} end)
+\begin{DoxyCompactList}\small\item\em Set the To \mbox{\hyperlink{classRobot}{Robot}} strategy of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a5f815c4ae570e73ab21422b22c538147}{Set\+To\+Destination}} (std\+::string strategy\+Name, \mbox{\hyperlink{classVector3}{Vector3}} start, \mbox{\hyperlink{classVector3}{Vector3}} end)
+\begin{DoxyCompactList}\small\item\em Set the To Destination strategy of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a8accdae9904f6df2022b584f8f1c7cc3}{Set\+Nearest\+Entity}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$\mbox{\hyperlink{classTypeDecorator_ab6a1e8cc4d4e4256ea363a9555deb062}{entity}})
+\begin{DoxyCompactList}\small\item\em Set the Nearest Entity object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a58813d699fc34b43bb9a15064c5a07e9}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em Rotate the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTypeDecorator_a57885a50fdb0614b9ed7422c599f9063}{Jump}} (double height)
+\begin{DoxyCompactList}\small\item\em Jump the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTypeDecorator_ab6a1e8cc4d4e4256ea363a9555deb062}\label{classTypeDecorator_ab6a1e8cc4d4e4256ea363a9555deb062}} 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classTypeDecorator_ab6a1e8cc4d4e4256ea363a9555deb062}{entity}}
+\begin{DoxyCompactList}\small\item\em the entity to decorate onto \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class inherits from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and is represents a type decorator where the entity will have a travel type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTypeDecorator_a674efa644693cb7ead18f51267d06c1a}\label{classTypeDecorator_a674efa644693cb7ead18f51267d06c1a}} 
+\index{TypeDecorator@{TypeDecorator}!TypeDecorator@{TypeDecorator}}
+\index{TypeDecorator@{TypeDecorator}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{TypeDecorator()}{TypeDecorator()}}
+{\footnotesize\ttfamily Type\+Decorator\+::\+Type\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new Type Decorator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to decorate onto \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTypeDecorator_a8383763b8197d00086034603f424da7c}\label{classTypeDecorator_a8383763b8197d00086034603f424da7c}} 
+\index{TypeDecorator@{TypeDecorator}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Type\+Decorator\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the availability of the entity. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463b1}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a6b0de3c017c7c4ce9418bcfc756253c7}\label{classTypeDecorator_a6b0de3c017c7c4ce9418bcfc756253c7}} 
+\index{TypeDecorator@{TypeDecorator}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily std\+::string Type\+Decorator\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the color of the entity. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a1326f6c0e0377a4fbde8a8c02fb6ccb3}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a634a953279461cb6fc120857e8051e78}\label{classTypeDecorator_a634a953279461cb6fc120857e8051e78}} 
+\index{TypeDecorator@{TypeDecorator}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Type\+Decorator\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the destination of the entity. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a2be1200f7ce657869e0b3c71b69c0ac3}\label{classTypeDecorator_a2be1200f7ce657869e0b3c71b69c0ac3}} 
+\index{TypeDecorator@{TypeDecorator}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Type\+Decorator\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the decorated Details object. 
+
+\begin{DoxyReturn}{Returns}
+Json\+Object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_af37120741645f6f9d95731b9290b3b2f}\label{classTypeDecorator_af37120741645f6f9d95731b9290b3b2f}} 
+\index{TypeDecorator@{TypeDecorator}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Type\+Decorator\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the direction of the entity. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_aca5514f565caf3eeece86ad02c48e700}\label{classTypeDecorator_aca5514f565caf3eeece86ad02c48e700}} 
+\index{TypeDecorator@{TypeDecorator}!GetId@{GetId}}
+\index{GetId@{GetId}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily int Type\+Decorator\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Id of the entity. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a2bfa9ab304ff33b252fbd5a707e42995}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a4cd360b71a99e1720a771705bdf2f976}\label{classTypeDecorator_a4cd360b71a99e1720a771705bdf2f976}} 
+\index{TypeDecorator@{TypeDecorator}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Type\+Decorator\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the position of the entity. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_affe680743bbd6cefec325d1ed008cc2b}\label{classTypeDecorator_affe680743bbd6cefec325d1ed008cc2b}} 
+\index{TypeDecorator@{TypeDecorator}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Type\+Decorator\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the speed of the entity. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a6942c5328f2ecd558bb07a9998b45db5}\label{classTypeDecorator_a6942c5328f2ecd558bb07a9998b45db5}} 
+\index{TypeDecorator@{TypeDecorator}!GetStrategyName@{GetStrategyName}}
+\index{GetStrategyName@{GetStrategyName}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{GetStrategyName()}{GetStrategyName()}}
+{\footnotesize\ttfamily std\+::string Type\+Decorator\+::\+Get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Strategy Name of the entity. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a14badced4c9d744bcc210cb3c1260ee1}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a57885a50fdb0614b9ed7422c599f9063}\label{classTypeDecorator_a57885a50fdb0614b9ed7422c599f9063}} 
+\index{TypeDecorator@{TypeDecorator}!Jump@{Jump}}
+\index{Jump@{Jump}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Jump (\begin{DoxyParamCaption}\item[{double}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Jump the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & height to jump \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a58813d699fc34b43bb9a15064c5a07e9}\label{classTypeDecorator_a58813d699fc34b43bb9a15064c5a07e9}} 
+\index{TypeDecorator@{TypeDecorator}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Rotate the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a1c2b6e6fda23fe61a52dc080ba6ec2b8}\label{classTypeDecorator_a1c2b6e6fda23fe61a52dc080ba6ec2b8}} 
+\index{TypeDecorator@{TypeDecorator}!SetAvailability@{SetAvailability}}
+\index{SetAvailability@{SetAvailability}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetAvailability()}{SetAvailability()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Availability (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the availability of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The desired availability of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a83e633dc9a00b646ccef82cdf48214cf}\label{classTypeDecorator_a83e633dc9a00b646ccef82cdf48214cf}} 
+\index{TypeDecorator@{TypeDecorator}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{col\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the coloe of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col\+\_\+} & std\+::string containing the color \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a61b62fe1126f473d8ebb524c70c57a39}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_af0ec955ecbaf44d877d2859ca901fffa}\label{classTypeDecorator_af0ec955ecbaf44d877d2859ca901fffa}} 
+\index{TypeDecorator@{TypeDecorator}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Destination of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em des\+\_\+} & \mbox{\hyperlink{classVector3}{Vector3}} containing the destination \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_ad381da7e062729e4b92095dbc495769f}\label{classTypeDecorator_ad381da7e062729e4b92095dbc495769f}} 
+\index{TypeDecorator@{TypeDecorator}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Direction of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+\_\+} & \mbox{\hyperlink{classVector3}{Vector3}} containing the direction \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_aea370b6eccc0f1e224d8d1ace738a64f}\label{classTypeDecorator_aea370b6eccc0f1e224d8d1ace738a64f}} 
+\index{TypeDecorator@{TypeDecorator}!SetGraph@{SetGraph}}
+\index{SetGraph@{SetGraph}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetGraph()}{SetGraph()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Graph (\begin{DoxyParamCaption}\item[{const I\+Graph $\ast$}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the graph of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTypeDecorator_a8accdae9904f6df2022b584f8f1c7cc3}\label{classTypeDecorator_a8accdae9904f6df2022b584f8f1c7cc3}} 
+\index{TypeDecorator@{TypeDecorator}!SetNearestEntity@{SetNearestEntity}}
+\index{SetNearestEntity@{SetNearestEntity}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetNearestEntity()}{SetNearestEntity()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Nearest\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Nearest Entity object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a6472b0ed8c96dbefe4f8ae205bb70254}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_ad91f16fe5ac2d86f7d5569f9aeeca08c}\label{classTypeDecorator_ad91f16fe5ac2d86f7d5569f9aeeca08c}} 
+\index{TypeDecorator@{TypeDecorator}!SetPickedUp@{SetPickedUp}}
+\index{SetPickedUp@{SetPickedUp}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetPickedUp()}{SetPickedUp()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Picked\+Up (\begin{DoxyParamCaption}\item[{bool}]{picked\+Up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the picked up status of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em picked\+Up} & bool containing the picked up status \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aefb2cbd72e5093764e54d56c608f9de9}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_aa824eb44692ef82d4d27811b8b85a252}\label{classTypeDecorator_aa824eb44692ef82d4d27811b8b85a252}} 
+\index{TypeDecorator@{TypeDecorator}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Position of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+} & \mbox{\hyperlink{classVector3}{Vector3}} containing the position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a2b5f93b45d6b8c6461b2611fd9d82d17}\label{classTypeDecorator_a2b5f93b45d6b8c6461b2611fd9d82d17}} 
+\index{TypeDecorator@{TypeDecorator}!SetStrategyName@{SetStrategyName}}
+\index{SetStrategyName@{SetStrategyName}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetStrategyName()}{SetStrategyName()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+Strategy\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy\+Name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the strategy name of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+Name\+\_\+} & Strategy name \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a933def05f85783fddbf05e8257cc8880}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a5f815c4ae570e73ab21422b22c538147}\label{classTypeDecorator_a5f815c4ae570e73ab21422b22c538147}} 
+\index{TypeDecorator@{TypeDecorator}!SetToDestination@{SetToDestination}}
+\index{SetToDestination@{SetToDestination}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetToDestination()}{SetToDestination()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+To\+Destination (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy\+Name,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{start,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the To Destination strategy of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+Name} & string containing the strategy name \\
+\hline
+{\em start} & \mbox{\hyperlink{classVector3}{Vector3}} containing the start position \\
+\hline
+{\em end} & vector3 containing the end position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9d48f3204722d8f21732ffa288d4bd8f}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a3aa4ecf2c0688063dcac9b5208d67ad3}\label{classTypeDecorator_a3aa4ecf2c0688063dcac9b5208d67ad3}} 
+\index{TypeDecorator@{TypeDecorator}!SetToRobot@{SetToRobot}}
+\index{SetToRobot@{SetToRobot}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{SetToRobot()}{SetToRobot()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Set\+To\+Robot (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy\+Name,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{start,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the To \mbox{\hyperlink{classRobot}{Robot}} strategy of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+Name} & string containing the strategy name \\
+\hline
+{\em start} & \mbox{\hyperlink{classVector3}{Vector3}} containing the start position \\
+\hline
+{\em end} & vector3 containing the end position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a70b41ed003d036dbaf33160251ddbf11}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTypeDecorator_a8bfe41da8ba891dcf8f844feb7ad557e}\label{classTypeDecorator_a8bfe41da8ba891dcf8f844feb7ad557e}} 
+\index{TypeDecorator@{TypeDecorator}!Update@{Update}}
+\index{Update@{Update}!TypeDecorator@{TypeDecorator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Type\+Decorator\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Update the entity\textquotesingle{}s position and direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time step \\
+\hline
+{\em scheduler} & Vector containing entities \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/include/Type\+Decorator.\+h\end{DoxyCompactItemize}

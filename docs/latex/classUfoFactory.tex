@@ -1,0 +1,63 @@
+\hypertarget{classUfoFactory}{}\doxysection{Ufo\+Factory Class Reference}
+\label{classUfoFactory}\index{UfoFactory@{UfoFactory}}
+
+
+U\+FO Factory to produce U\+F\+Os.  
+
+
+
+
+{\ttfamily \#include $<$Ufo\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Ufo\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Ufo\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUfoFactory_a4e07346a4fb8cbeccdfa12fbfb32d529}\label{classUfoFactory_a4e07346a4fb8cbeccdfa12fbfb32d529}} 
+virtual \mbox{\hyperlink{classUfoFactory_a4e07346a4fb8cbeccdfa12fbfb32d529}{$\sim$\+Ufo\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classUfoFactory_af679a4fab2ed6b4f4a4b00f4ced305a1}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates entity using the given J\+S\+ON object, if possible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+U\+FO Factory to produce U\+F\+Os. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUfoFactory_af679a4fab2ed6b4f4a4b00f4ced305a1}\label{classUfoFactory_af679a4fab2ed6b4f4a4b00f4ced305a1}} 
+\index{UfoFactory@{UfoFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!UfoFactory@{UfoFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Ufo\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates entity using the given J\+S\+ON object, if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & -\/ Json\+Object to be used to create the new entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity that was created if it was created successfully, or a nullptr if creation failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/include/Ufo\+Factory.\+h\item 
+/mnt/c/\+Users/\+Joshua/\+Documents/\+Git\+Hub/\+Team-\/010-\/40-\/homework4/libs/transit/src/Ufo\+Factory.\+cc\end{DoxyCompactItemize}

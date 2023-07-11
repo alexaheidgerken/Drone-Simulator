@@ -1,0 +1,23 @@
+digraph "IStrategy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="IStrategy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Strategy interface."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="BeelineStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBeelineStrategy.html",tooltip="this class inhertis from the IStrategy class and is responsible for generating the beeline that the d..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CelebrationDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCelebrationDecorator.html",tooltip="this class inhertis from the IStrategy class and is represents a celebration decorator where the enti..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="JumpDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classJumpDecorator.html",tooltip="this class inhertis from the IStrategy class and is represents a celebration decorator where the enti..."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="SpinDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSpinDecorator.html",tooltip="this class inhertis from the IStrategy class and is represents a celebration decorator where the enti..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PathStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPathStrategy.html",tooltip="this class inhertis from the IStrategy class and is represents a movement strategy where the entity s..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="AstarStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAstarStrategy.html",tooltip="this class inhertis from the PathStrategy class and is responsible for generating the astar path that..."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="DfsStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDfsStrategy.html",tooltip="this class inhertis from the PathStrategy class and is responsible for generating the depth first sea..."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="DijkstraStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDijkstraStrategy.html",tooltip="this class inhertis from the PathStrategy class and is responsible for generating the dijkstra path t..."];
+}
