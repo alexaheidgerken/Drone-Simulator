@@ -65,5 +65,4 @@ This extension utilizes the Singleton design pattern to implement data collectio
 Our team found that using Jira, along with Agile methods, greatly assisted in the organization and communication of our work. We were able to easily create and manage a task list, and collaborate effectively by adding, removing, and commenting on these tasks. Additionally, our team made good use of Discord for planning and addressing questions that arose during the sprint. Overall, we were successful in utilizing Agile methodologies and completing all tasks while adhering to our Definition of Done. However, one thing we identified as needing improvement was sticking to the plan. This is not necessarily bad, because the unguided extensions were a new area of learning, and planning for unknowns is a difficult thing to do. We were still able to complete our goals, but the path we took to get there may have been longer than if we spent more effort on the planning stages. One thing in specific was the exact data we wanted to collect for our Data Collection extension. It was hard to know what data would work well with this extension and how accessible that data would be within the simulation. This resulted in many changes that were later overwritten or discarded, thus elongating the overall process.
 
 
-# Video Presentation
-https://youtu.be/LunW6ZHOL1I
+
